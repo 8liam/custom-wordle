@@ -16,7 +16,6 @@ export default function CreateGame() {
       const encodedWord = encodeWord(word); // Assuming encodeWord returns an encoded string
       setLink(`/play/${encodedWord}`);
       setError("");
-      console.log(encodedWord);
     }
     if (!wordExists(word)) {
       setError(`${word} is not a word.`);
