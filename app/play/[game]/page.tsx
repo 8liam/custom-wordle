@@ -84,7 +84,7 @@ export default function Game({ params }: any) {
           );
           // Find the index of the first all-green row
           const indexOfAllGreen = emojiArray.findIndex((row) =>
-            row.every((cell) => cell === "🟩")
+            row.every((cell: string) => cell === "🟩")
           );
 
           // Remove rows after the first all-green row
