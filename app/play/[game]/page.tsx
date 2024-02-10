@@ -137,7 +137,7 @@ export default function Game({ params }: any) {
     // Copy the string to the clipboard
     navigator.clipboard
       .writeText(
-        `I got Customdle #${params.game} in ${row} Guesses!\n\n${formattedString}\n\nTry it out: https://customdle.com/play/${params.game}`
+        `I got Customdle #${params.game} in ${row} Guesses!\n${formattedString}\n\nTry it out: @ https://customdle.vercel.app/play/${params.game}`
       )
       .then(() => {
         alert("Copied to clipboard successfully");
