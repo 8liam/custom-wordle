@@ -150,7 +150,7 @@ export default function Game({ params }: any) {
   return (
     <>
       <Navbar />
-      <div className="flex min-h-screen flex-col items-center justify-between p-24">
+      <div className="flex flex-col items-center justify-between lg:p-24">
         {!correct && (
           <>
             <div className="grid grid-cols-5 grid-rows-6 gap-2">
@@ -162,7 +162,7 @@ export default function Game({ params }: any) {
                       className={`absolute inset-0 opacity-50 ${backgroundColors[rowIndex][cellIndex]}`}
                     />
                     {/* Text content */}
-                    <div className="flex border-2 border-gray-500 w-20 h-20 text-center uppercase font-semibold text-5xl items-center justify-center">
+                    <div className="flex border-2 border-gray-500 lg:w-20 lg:h-20 h-16 w-16 text-center uppercase font-semibold text-5xl items-center justify-center">
                       <p>{cell}</p>
                     </div>
                   </div>
@@ -174,26 +174,30 @@ export default function Game({ params }: any) {
               value={inputValue}
               // Update state and convert to uppercase
               type="text"
-              className="text-white bg-[#11172a] border-2 border-gray-500 px-1 py-1 text-center uppercase"
+              className="text-white bg-[#11172a] border-2 border-gray-500 px-1 py-1 my-4 text-center uppercase"
               maxLength={5}
             />
           </>
         )}
         {correct && (
-          <div>
-            <div>
-              <h1>Correct in {row} guesses!</h1>
-              <a onClick={sendToClipboard}>Share!</a>
+          <div className="space-y-4">
+            <div className="mb-4 ">
+              {row === 1 && (
+                <h1 className="text-3xl mb-4">Correct in {row} guess!</h1>
+              )}
+              {row > 1 && (
+                <h1 className="text-3xl mb-4">Correct in {row} guesses!</h1>
+              )}
+
+              <a className="bg-correct hover:bg-invalid duration-300 p-2 mb-4 rounded" onClick={sendToClipboard}>Share Results</a>
             </div>
             <div className="grid grid-cols-5 grid-rows-6 gap-2">
               {gameState.map((row, rowIndex) =>
                 row.map((cell, cellIndex) => (
                   <div key={`${rowIndex}-${cellIndex}`} className="relative">
-                    {/* Background color */}
                     <div
                       className={`absolute inset-0 opacity-50 ${backgroundColors[rowIndex][cellIndex]}`}
                     />
-                    {/* Text content */}
                     <div className="flex border-2 border-gray-500 w-20 h-20 text-center uppercase font-semibold text-5xl items-center justify-center">
                       <p>{cell}</p>
                     </div>

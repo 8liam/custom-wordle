@@ -17,6 +17,7 @@ const config: Config = {
         correct: "#598d4d",
         invalid: "#0e1120",
         wrong: "#b19f3d",
+
       },
     },
   },
