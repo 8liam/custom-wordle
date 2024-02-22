@@ -6,7 +6,10 @@ export default function Navbar() {
         <h1 className="text-lg font-semibold">Customdle</h1>
         {/* Navigation Links */}
         <div className="flex space-x-4">
-          <a href="/create" className="hover:bg-blue-700 px-3 py-2 rounded">
+          <a
+            href="/create"
+            className="hover:bg-wrong bg-correct duration-300 px-3 py-2 rounded"
+          >
             Create
           </a>
         </div>
