@@ -13,6 +13,10 @@ export default function CreateGame() {
   const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault(); // Prevent the form from submitting in the traditional way
     if (wordExists(word)) {
+      if (word.length < 5) {
+        setError(`${word} is not 5 letters.`);
+        return;
+      }
       const encodedWord = encodeWord(word); // Assuming encodeWord returns an encoded string
       setLink(`/play/${encodedWord}`);
       setError("");
