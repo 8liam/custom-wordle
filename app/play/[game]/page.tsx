@@ -187,14 +187,14 @@ export default function Game({ params }: any) {
                 ))
               )}
             </div>
-            {error && <p>{error}</p>}
+            {error && <p className="text-center mt-4">{error}</p>}
             {row < 6 && (
               <input
                 onKeyDown={handleKeyDown}
                 value={inputValue}
                 // Update state and convert to uppercase
                 type="text"
-                className="text-white bg-[#11172a] border-2 border-gray-500 px-1 py-1 text-center uppercase"
+                className="text-white bg-[#11172a] border-2 border-gray-500 px-1 py-1 text-center uppercase mt-8"
                 maxLength={5}
               />
             )}
