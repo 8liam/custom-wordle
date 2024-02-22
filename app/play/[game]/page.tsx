@@ -170,7 +170,7 @@ export default function Game({ params }: any) {
   return (
     <>
       <Navbar />
-      <div className="flex min-h-screen flex-col items-center justify-between p-24">
+      <div className="flex flex-col items-center justify-between lg:p-24">
         {!correct && (
           <>
             <div className="grid grid-cols-5 grid-rows-6 gap-2">

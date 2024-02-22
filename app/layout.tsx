@@ -6,7 +6,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Customdle",
-  description: "Make custom wordle games to challenge friends",
+  description: "Create Custom Wordles for your friends!",
 };
 
 export default function RootLayout({

@@ -3,7 +3,9 @@ export default function Navbar() {
     <nav className="bg-invalid text-white p-4">
       <div className="max-w-6xl mx-auto flex justify-between items-center">
         {/* Logo and title */}
-        <h1 className="text-lg font-semibold">Customdle</h1>
+        <a href="/" className="text-lg font-semibold">
+          Customdle
+        </a>
         {/* Navigation Links */}
         <div className="flex space-x-4">
           <a
