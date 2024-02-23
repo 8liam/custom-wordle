@@ -63,10 +63,10 @@ export default function Game({ params }: any) {
           guess.forEach((letter, index) => {
             if (letter === answer[index]) {
               // Letter found in the exact same position as the answer
-              backgroundColorsRow[index] = "bg-green-500";
+              backgroundColorsRow[index] = "bg-correct";
             } else if (answer.includes(letter)) {
               // Letter found in the answer but not in the same position
-              backgroundColorsRow[index] = "bg-yellow-500";
+              backgroundColorsRow[index] = "bg-wrong";
             }
           });
 
