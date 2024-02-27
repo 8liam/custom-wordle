@@ -13,12 +13,12 @@
 	<li><strong>Solve:</strong> Solve games your friends have sent you by guessing 5 letter words.</li>
 	<li><strong>Share:</strong> Share your results by clipboard to send to friends
     <pre>
-I got Customdle #4641474f54 in 4/6 Guesses!
-⬜🟩🟨⬜⬜
-⬜🟩⬜⬜🟩
-⬜🟩⬜⬜🟩
+I got Customdle #524f554e44 in 3/6 Guesses!
+⬜🟨⬜🟩⬜
+🟩🟨⬜⬜⬜
 🟩🟩🟩🟩🟩
-Try it out: @ https://customdle.vercel.app/play/4641474f54</pre>
+
+Try it out: @ https://customdle.vercel.app/play/524f554e44</pre>
 
 </li>
 </ul>
